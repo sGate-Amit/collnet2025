@@ -59,7 +59,7 @@ a {
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
-  max-width: 1120px;
+  max-width: 1280px;
   margin-inline: 1.5rem;
 }
 
@@ -199,9 +199,10 @@ a {
 
 .dropdown__link, 
 .dropdown__sublink {
-  padding: 1.25rem 1.25rem 1.25rem 2.5rem;
+  /*padding: 1.25rem 1.25rem 1.25rem 2.5rem;*/
   color: var(--white-color);
-  background-color: var(--black-color-light);
+ /* background-color: var(--black-color-light);*/
+ background-color: #1f3594;
   display: flex;
   align-items: center;
   column-gap: .5rem;
@@ -217,7 +218,8 @@ a {
 
 .dropdown__link:hover, 
 .dropdown__sublink:hover {
-  background-color: var(--black-color);
+  /*background-color: var(--black-color);*/
+  background-color:#0f216a;
 }
 
 .dropdown__menu, 
@@ -245,7 +247,8 @@ a {
 }
 
 .dropdown__sublink {
-  background-color: var(--black-color-lighten);
+ /* background-color: var(--black-color-lighten);*/
+   background-color: #1f3594;
 }
 
 /*=============== BREAKPOINTS ===============*/
@@ -277,16 +280,20 @@ a {
   .nav__list {
     height: 100%;
     display: flex;
-    column-gap: 3rem;
+    column-gap:15px;
+	/*column-gap: 3rem;*/
   }
   .nav__link {
     height: 100%;
     padding: 0;
     justify-content: initial;
     column-gap: .25rem;
+		font-size:15px;
+	font-weight:normal;
   }
   .nav__link:hover {
     background-color: transparent;
+	color:#1f3594;
   }
 
   .dropdown__item, 
@@ -304,11 +311,15 @@ a {
     opacity: 0;
     pointer-events: none;
     transition: opacity .3s, top .3s;
+	width:220px;
   }
 
   .dropdown__link, 
   .dropdown__sublink {
-    padding-inline: 1rem 3.5rem;
+   /* padding-inline: 1rem 3.5rem;*/
+   padding:8px 15px;
+   	font-size:14px;
+	font-weight:normal;
   }
 
   .dropdown__subitem .dropdown__link {
