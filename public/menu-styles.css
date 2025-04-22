@@ -280,7 +280,7 @@ a {
   .nav__list {
     height: 100%;
     display: flex;
-    column-gap:15px;
+    column-gap:2rem;
 	/*column-gap: 3rem;*/
   }
   .nav__link {
@@ -311,7 +311,7 @@ a {
     opacity: 0;
     pointer-events: none;
     transition: opacity .3s, top .3s;
-	width:220px;
+	width:200px;
   }
 
   .dropdown__link, 
