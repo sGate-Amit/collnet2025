@@ -2892,6 +2892,46 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
             
          </div>
       </div>
+<script type="text/javascript">
+      // Set the target date (you can dynamically set this as needed)
+      const targetDate = new Date();
+      targetDate.setDate(targetDate.getDate() + 163);
+      targetDate.setHours(targetDate.getHours() + 17);
+      targetDate.setMinutes(targetDate.getMinutes() + 37);
+      targetDate.setSeconds(targetDate.getSeconds() + 58);
 
+      const countdownInterval = setInterval(() => {
+        const now = new Date().getTime();
+        const distance = targetDate - now;
+
+        if (distance <= 0) {
+          clearInterval(countdownInterval);
+          return;
+        }
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
+        const minutes = Math.floor((distance / (1000 * 60)) % 60);
+        const seconds = Math.floor((distance / 1000) % 60);
+
+        const timeValues = [
+          { value: days, index: 0 },
+          { value: hours, index: 1 },
+          { value: minutes, index: 2 },
+          { value: seconds, index: 3 },
+        ];
+
+        const countdownItems = document.querySelectorAll(".bs-countdown .item");
+
+        timeValues.forEach((time, i) => {
+          const digits = String(time.value).padStart(2, "0").split("");
+          const item = countdownItems[time.index];
+          const valueDivs = item.querySelectorAll(".value");
+
+          valueDivs[0].textContent = digits[0];
+          valueDivs[1].textContent = digits[1];
+        });
+      }, 1000);
+    </script>
    </body>
 </html>
