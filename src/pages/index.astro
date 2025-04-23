@@ -250,68 +250,47 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
                                                             <bs-widget event-count-down-id="37939000000002282" id="ember136" class="bs-countdown-wgt ember-view">
                                                                <div aria-label="Event Countdown" id="ember137" class="ember-view">
                                                                   
-                                                                  <div style="--bs-countdown-border-width: 1px;" id="ember138" class="bs-countdown style-1  small  ember-view">
-                                                                     <span class="hidden"></span>
-                                                                     	
-                                                                     <div class="item" aria-label="163 Days">
-                                                                        <div class="values">
-                                                                           <div class="value" aria-hidden="true">
-                                                                              1
-                                                                           </div>
-                                                                           <div class="value" aria-hidden="true">
-                                                                              6
-                                                                           </div>
-                                                                           <div class="value" aria-hidden="true">
-                                                                              3
-                                                                           </div>
-                                                                        </div>
-                                                                        <div class="label" aria-hidden="true">
-                                                                           Days
-                                                                        </div>
+                                                                 <!---->
+                                                                 <div style="--bs-countdown-border-width: 1px;" id="ember138" class="bs-countdown style-1  small  ember-view">
+                                                                  <span class="hidden"></span>
+                                                                  <!---->	
+                                                                  <div class="item" aria-label="163 Days">
+                                                                     <div class="values">
+                                                                        <span style="font-size: 23px;font-weight: 600;" id="days">00</span>
                                                                      </div>
-                                                                     	
-                                                                     <div class="item" aria-label="17 Hours">
-                                                                        <div class="values">
-                                                                           <div class="value" aria-hidden="true">
-                                                                              1
-                                                                           </div>
-                                                                           <div class="value" aria-hidden="true">
-                                                                              7
-                                                                           </div>
-                                                                        </div>
-                                                                        <div class="label" aria-hidden="true">
-                                                                           Hours
-                                                                        </div>
-                                                                     </div>
-                                                                     	
-                                                                     <div class="item" aria-label="37 Minutes">
-                                                                        <div class="values">
-                                                                           <div class="value" aria-hidden="true">
-                                                                              3
-                                                                           </div>
-                                                                           <div class="value" aria-hidden="true">
-                                                                              7
-                                                                           </div>
-                                                                        </div>
-                                                                        <div class="label" aria-hidden="true">
-                                                                           Minutes
-                                                                        </div>
-                                                                     </div>
-                                                                     	
-                                                                     <div class="item" aria-label="58 Seconds">
-                                                                        <div class="values">
-                                                                           <div class="value" aria-hidden="true">
-                                                                              5
-                                                                           </div>
-                                                                           <div class="value" aria-hidden="true">
-                                                                              8
-                                                                           </div>
-                                                                        </div>
-                                                                        <div class="label" aria-hidden="true">
-                                                                           Seconds
-                                                                        </div>
+                                                                     <div class="label" aria-hidden="true">
+                                                                        Days
                                                                      </div>
                                                                   </div>
+                                                                  <!---->	
+                                                                  <div class="item" aria-label="17 Hours">
+                                                                     <div class="values">
+                                                                        <span style="font-size: 23px;font-weight: 600;" id="hours">00</span>
+                                                                     </div>
+                                                                     <div class="label" aria-hidden="true">
+                                                                        Hours
+                                                                     </div>
+                                                                  </div>
+                                                                  <!---->	
+                                                                  <div class="item" aria-label="37 Minutes">
+                                                                     <div class="values">
+                                                                        <span  style="font-size: 23px;font-weight: 600;" id="minutes">00</span>
+                                                                     </div>
+                                                                     <div class="label" aria-hidden="true">
+                                                                        Minutes
+                                                                     </div>
+                                                                  </div>
+                                                                  <!---->	
+                                                                  <div class="item" aria-label="58 Seconds">
+                                                                     <div class="values">
+                                                                        <span style="font-size: 23px;font-weight: 600;" id="seconds">00</span>
+                                                                     </div>
+                                                                     <div class="label" aria-hidden="true">
+                                                                        Seconds
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                               <!---->  
                                                                   
                                                                </div>
                                                             </bs-widget>
@@ -2892,46 +2871,33 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
             
          </div>
       </div>
-<script type="text/javascript">
-      // Set the target date (you can dynamically set this as needed)
-      const targetDate = new Date();
-      targetDate.setDate(targetDate.getDate() + 148);
-      targetDate.setHours(targetDate.getHours() + 17);
-      targetDate.setMinutes(targetDate.getMinutes() + 37);
-      targetDate.setSeconds(targetDate.getSeconds() + 58);
-
-      const countdownInterval = setInterval(() => {
-        const now = new Date().getTime();
-        const distance = targetDate - now;
-
-        if (distance <= 0) {
-          clearInterval(countdownInterval);
-          return;
-        }
-
-        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
-        const minutes = Math.floor((distance / (1000 * 60)) % 60);
-        const seconds = Math.floor((distance / 1000) % 60);
-
-        const timeValues = [
-          { value: days, index: 0 },
-          { value: hours, index: 1 },
-          { value: minutes, index: 2 },
-          { value: seconds, index: 3 },
-        ];
-
-        const countdownItems = document.querySelectorAll(".bs-countdown .item");
-
-        timeValues.forEach((time, i) => {
-          const digits = String(time.value).padStart(2, "0").split("");
-          const item = countdownItems[time.index];
-          const valueDivs = item.querySelectorAll(".value");
-
-          valueDivs[0].textContent = digits[0];
-          valueDivs[1].textContent = digits[1];
-        });
-      }, 1000);
-    </script>
+      <script>
+         // Set target: Sep 19, 2025 at 08:00:00 local time
+         const targetDate = new Date(2025, 8, 19, 8, 0, 0); // Month is 0-indexed
+   
+         function updateCountdown() {
+           const now = new Date();
+           const distance = targetDate - now;
+   
+           if (distance <= 0) {
+             document.getElementById("countdown").innerHTML = "🎉 It's time!";
+             clearInterval(countdownInterval);
+             return;
+           }
+   
+           const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+           const hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
+           const minutes = Math.floor((distance / (1000 * 60)) % 60);
+           const seconds = Math.floor((distance / 1000) % 60);
+   
+           document.getElementById("days").textContent = String(days).padStart(2, '0');
+           document.getElementById("hours").textContent = String(hours).padStart(2, '0');
+           document.getElementById("minutes").textContent = String(minutes).padStart(2, '0');
+           document.getElementById("seconds").textContent = String(seconds).padStart(2, '0');
+         }
+   
+         const countdownInterval = setInterval(updateCountdown, 1000);
+         updateCountdown(); // Run immediately once
+       </script>
    </body>
 </html>
