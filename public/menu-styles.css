@@ -266,7 +266,7 @@ a {
 @media screen and (max-width: 480px) {
 .nav__link:hover{  background-color:#171C26;color: #fff;}
 .dropdown__link, .dropdown__sublink{padding:7px 15px;}
-
+.nav__link{padding:7px 15px;}
 }
 /* For large devices */
 @media screen and (min-width: 1118px) {
