@@ -356,3 +356,32 @@ a {
   }
 .cnmmli{margin-left: -140px;}
 }
+
+@media only screen and (max-width: 767px) {
+    .main-banner .section-head {
+        word-break: break-word;
+        font-size: 30px;
+        margin-top: -20px;
+    }.banner-widget .bs-media-wgt .media-element:not(.secondary-media) .media-image img {
+    max-width: 70%;
+}.bs-media-wgt .media-element {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}.bs-section h4 p {
+  text-align: center;
+}
+.bs-album .justified-gallery>.gallery-component {
+    width: 92% !important;
+}
+.bs-eventVenue-info .embed-map .grb-list .li-item {
+        margin-top: 542px;
+    }
+.bs-mtList-wgt .ember-view{width:100%}
+.bs-album .justified-gallery>.gallery-component>.gallery-card>img {
+    width: 250px;
+    height: 54px;
+    margin-left: -125px;
+    margin-top: -44px;
+}
+}
