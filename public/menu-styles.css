@@ -264,8 +264,9 @@ a {
 }
 
 @media screen and (max-width: 480px) {
-.nav__link:hover{  background-color:#171C26color: #fff;}
+.nav__link:hover{  background-color:#171C26;color: #fff;}
 .dropdown__link, .dropdown__sublink{padding:7px 15px;}
+
 }
 /* For large devices */
 @media screen and (min-width: 1118px) {
@@ -351,5 +352,5 @@ a {
     pointer-events: initial;
     transition: top .3s;
   }
-}
 .cnmmli{margin-left: -140px;}
+}
