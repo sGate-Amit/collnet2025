@@ -363,6 +363,18 @@ a {
 }
 
 @media only screen and (max-width: 767px) {
+.justified-gallery>a, .justified-gallery>div {
+      position: static !important;   }
+.galleryLayout.justified-gallery {
+    width: 100% !important;
+    height: 100% !important;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+	
 
 .bs-mtList-wgt .ember-view{width:100%}
 
