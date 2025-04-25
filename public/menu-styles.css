@@ -269,7 +269,9 @@ a {
 
 @media screen and (max-width: 480px) {
 
-	.ember-view h4{max-width:320px;}
+	.ember-view h4{max-width:350px;padding-top:20px;}
+div#ember613{max-width:320px;}
+.venue.map{width:100%; text-align:center;}
 h2.ember-view{max-width:320px;}
 	iframe{width:auto;margin-left:-10px;}
 .nav__link:hover{  background-color:#171C26;color: #fff;}
