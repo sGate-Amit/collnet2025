@@ -28,7 +28,8 @@
 }
 
 /*========== Responsive typography ==========*/
-h2.ember-view{max-width:360px;}
+.ember-viewh4{max-width:320px;}
+h2.ember-view{max-width:320px;}
 iframe{width:550px;}
 
 @media screen and (min-width: 1024px) {
