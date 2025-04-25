@@ -29,7 +29,7 @@
 
 /*========== Responsive typography ==========*/
 
-.ember-viewh4{max-width:320px;}
+.ember-view h4{max-width:320px;}
 h2.ember-view{max-width:320px;}
 iframe{width:550px;}
 
