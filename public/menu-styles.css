@@ -392,10 +392,4 @@ a {
         margin-top: 542px;
     }
 .bs-mtList-wgt .ember-view{width:100%}
-bs-album .justified-gallery>.gallery-component>.gallery-card>img {
-    width: 250px !important;
-    height: 54px !important;
-    margin-left: -125px !important;
-    margin-top: -44px !important;
-}
 }
