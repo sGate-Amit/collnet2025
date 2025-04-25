@@ -29,8 +29,7 @@
 
 /*========== Responsive typography ==========*/
 
-.ember-view h4{max-width:320px;}
-h2.ember-view{max-width:320px;}
+
 iframe{width:550px;}
 
 @media screen and (min-width: 1024px) {
@@ -269,6 +268,9 @@ a {
 }
 
 @media screen and (max-width: 480px) {
+
+	.ember-view h4{max-width:320px;}
+h2.ember-view{max-width:320px;}
 	iframe{width:auto;margin-left:-10px;}
 .nav__link:hover{  background-color:#171C26;color: #fff;}
 .grb-list.align-item-center.column-4 .li-item, .grb-list.align-item-right.column-4 .li-item{width:100%;}	
