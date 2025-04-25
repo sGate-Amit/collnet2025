@@ -365,13 +365,7 @@ a {
 @media only screen and (max-width: 767px) {
 
 .bs-mtList-wgt .ember-view{width:100%}
-.bs-album .justified-gallery>.gallery-component>.gallery-card>img {
-    width: 250px !important;
-    height: 54px !important;
-    margin-left: -125px !important;
-    margin-top: -44px !important;
-}
-	
+
     .main-banner .section-head {
         word-break: break-word;
         font-size: 30px;
