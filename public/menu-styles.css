@@ -269,7 +269,8 @@ a {
 }
 
 @media screen and (max-width: 480px) {
-
+bs-widget#ember611 {justify-content:left!important; margin: 0 80px;}
+	.venue iframe{ width:105%  !important;padding:0!important;text-align: center;}
 	.ember-view h4{max-width:350px;padding-top:20px;}
 div#ember613{max-width:320px;}
 .venue.map{width:100%; text-align:center;}
