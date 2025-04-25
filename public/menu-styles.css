@@ -28,6 +28,7 @@
 }
 
 /*========== Responsive typography ==========*/
+
 .ember-viewh4{max-width:320px;}
 h2.ember-view{max-width:320px;}
 iframe{width:550px;}
@@ -375,8 +376,7 @@ a {
     justify-content: center;
     align-items: center;
 }
-	
-
+div#ember4 {overflow-x: hidden !important;}
 .bs-mtList-wgt .ember-view{width:100%}
 
     .main-banner .section-head {
