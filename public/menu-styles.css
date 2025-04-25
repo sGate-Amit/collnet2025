@@ -269,6 +269,7 @@ a {
 @media screen and (max-width: 480px) {
 	iframe{width:auto;margin-left:-10px;}
 .nav__link:hover{  background-color:#171C26;color: #fff;}
+.grb-list.align-item-center.column-4 .li-item, .grb-list.align-item-right.column-4 .li-item{width:100%;}	
 .dropdown__link, .dropdown__sublink{padding:7px 15px;}
 .nav__link{padding:7px 15px;}
  .nav__list {background-color:#1f5495;padding-top:2px;
