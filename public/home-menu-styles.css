@@ -1,31 +1,41 @@
 a.cnhl{font-weight: bold!important; color: #1f3594!important;}
 .bs-main-menu{height: 57px!important;}     
+.image-wrapper {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb; /* light gray border */
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 100%;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.03); /* optional subtle shadow */
+}
+
+/* Grid layout for images */
 .image-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  padding: 20px;
   justify-items: center;
   align-items: center;
 }
 
+/* Image styles */
 .responsive-img {
   width: 100px;
   height: 100px;
   object-fit: contain;
 }
 
-/* Responsive for small screens: 2 columns */
+/* Responsive: show 2 images per row on medium screen */
 @media (max-width: 768px) {
   .image-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Optional: Stack vertically on very small screens */
+/* Responsive: 1 image per row on small screen */
 @media (max-width: 480px) {
   .image-grid {
-    grid-template-columns: 1fr; /* 1 column for very small screens */
+    grid-template-columns: 1fr;
   }
 }
-
