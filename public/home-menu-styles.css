@@ -1,18 +1,30 @@
 a.cnhl{font-weight: bold!important; color: #1f3594!important;}
 .bs-main-menu{height: 57px!important;}     
-.image-container {
-  display: flex;
-  justify-content: center;
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
   align-items: center;
-  gap: 16px; /* spacing between images */
-  flex-wrap: wrap;
-  background-color: #fff; /* or any color if needed */
-  padding: 10px;
 }
 
 .responsive-img {
-  width: 100px;   /* set your preferred size */
+  width: 100px;
   height: 100px;
-  object-fit: contain; /* keeps image aspect ratio within box */
-  max-width: 100%;
+  object-fit: contain;
+}
+
+/* Responsive for small screens: 2 columns */
+@media (max-width: 768px) {
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+  }
+}
+
+/* Optional: Stack vertically on very small screens */
+@media (max-width: 480px) {
+  .image-grid {
+    grid-template-columns: 1fr; /* 1 column for very small screens */
+  }
 }
