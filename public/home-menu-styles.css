@@ -1,18 +1,18 @@
 a.cnhl{font-weight: bold!important; color: #1f3594!important;}
 .bs-main-menu{height: 57px!important;}     
-@media (max-width: 600px) {
-.gallery-card img:nth-child(1) {
-  margin-left: -162px;
-    margin-top: -33px;
-    width: 20%;
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px; /* spacing between images */
+  flex-wrap: wrap;
+  background-color: #fff; /* or any color if needed */
+  padding: 10px;
 }
-.gallery-card img:nth-child(2) {
-  margin-left: -49px;
-    margin-top: -55px;
-    width: 20%;
+
+.responsive-img {
+  width: 100px;   /* set your preferred size */
+  height: 100px;
+  object-fit: contain; /* keeps image aspect ratio within box */
+  max-width: 100%;
 }
-.gallery-card img:nth-child(3) {
-  margin-left: 85px;
-    margin-top: -4px;
-    width: 20%;
-} }
